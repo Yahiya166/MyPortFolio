@@ -203,7 +203,8 @@
                 <div class="circle">Bootstrap</div>
                 <div class="circle">JavaScript</div>
                 <div class="circle">Jquery</div>
-                <div class="circle">Flex</div>
+                <div class="circle">Flexbox</div>
+                <div class="circle">Grid</div>
                 <div class="circle">Landing Pages</div>
                 <div class="circle">Responive Web Design</div>
                 <div class="circle">Page Layout</div>
@@ -363,28 +364,28 @@
 
             <div class="col-xl-6 right">
               <div class="text">Message Me</div>
-              <form action="https://formsubmit.co/muhammadyahiya166@gmail.com" method="post">
+              <form id="handleSubmit">
                 <div class="fields">
                   <div class="field name">
-                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Name" id="name" required>
                   </div>
 
                   <div class="field email">
-                    <input type="Email" placeholder="Email" required>
+                    <input type="Email" placeholder="Email" id="email" required>
                   </div>
 
                 </div>
 
                 <div class="field subject">
-                  <input type="text" placeholder="Subject" required>
+                  <input type="text" placeholder="Subject" id="subject" required>
                 </div>
 
                 <div class="field textarea">
-                  <textarea placeholder="Describe project.." required></textarea>
+                  <textarea placeholder="Describe project.." id="message" required></textarea>
                 </div>
 
                 <div class="submit">
-                  <button type="submit">Send Message</button>
+                  <button type="submit" id="sendform">Send Message</button>
                 </div>
 
               </form>
@@ -441,6 +442,9 @@
       duration: 800,
     });
   </script>
+
+<!-- Email JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <!-- Jquery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"

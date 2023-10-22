@@ -58,3 +58,8 @@ function submitForm(e) {
 
 
 form.addEventListener('submit', submitForm);
+
+
+
+const cv = document.getElementById("downloadCV");
+

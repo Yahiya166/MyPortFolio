@@ -808,6 +808,9 @@ footer span a:hover {
         border-radius: 6px;
         margin-top: 20px;
     }
+    .list_main {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 400px) {
